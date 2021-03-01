@@ -25,12 +25,12 @@ AddEventHandler("cryptos_loot", function()
 		item, amount = Config.ItemPayout['2percent'][item_roll].item, Config.ItemPayout['2percent'][item_roll].amount
 		get_item = true
       elseif item_chance > 90 then
-        local max_items = tonumber(#Config.ItemPayout['2percent'])
+        local max_items = tonumber(#Config.ItemPayout['6percent'])
         local item_roll = math.random(1, max_items)
 		item, amount = Config.ItemPayout['6percent'][item_roll].item, Config.ItemPayout['6percent'][item_roll].amount
 		get_item = true
       elseif item_chance > 80 then
-        local max_items = tonumber(#Config.ItemPayout['2percent'])
+        local max_items = tonumber(#Config.ItemPayout['10percent'])
         local item_roll = math.random(1, max_items)
 		item, amount = Config.ItemPayout['10percent'][item_roll].item, Config.ItemPayout['10percent'][item_roll].amount
 		get_item = true

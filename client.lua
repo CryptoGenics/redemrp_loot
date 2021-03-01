@@ -31,9 +31,7 @@ Citizen.CreateThread(function()
 									Wait(500)
 									local lootedcheck = Citizen.InvokeNative(0x8DE41E9902E85756, entityHit)
 									if lootedcheck then
-										local loot = math.random(1, 10)
-										local lootpay = loot / 100
-										TriggerServerEvent('cryptos_loot', lootpay)
+										TriggerServerEvent('cryptos_loot')
 									else
 										looting = false
 									end
